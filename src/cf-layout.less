@@ -1275,6 +1275,16 @@
         });
     }
 
+    &__bg-small {
+      padding: unit(@grid_gutter-width / @base-font-size-px, em)
+                 unit((@grid_gutter-width / 2) / @base-font-size-px, em);
+        background: @gray-10;
+        .respond-to-min(600px, {
+            padding: unit(@grid_gutter-width / @base-font-size-px, em)
+                 unit((@grid_gutter-width / 2) / @base-font-size-px, em);
+        });
+    }
+
     &__padded-top {
         padding-top: unit(30px / @base-font-size-px, em);
         margin-top: unit(30px / @base-font-size-px, em);
